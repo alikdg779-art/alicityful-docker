@@ -1,7 +1,24 @@
-import { getCityInfo } from "./services/stateService.js";
+let lastCity = null; // 👈 STATE (HAFIZA)
 
-window.getCity = function () {
-    const city = document.getElementById("cityInput").value;
-    const result = getCityInfo(city);
-    document.getElementById("result").innerHTML = result;
+function getCityInfo() {
+    const city = document.getElementById("cityInput").value.trim().toLowerCase();
+    if (!city) return;
+
+    lastCity = city; // STATE GÜNCELLENİYOR
+
+    const plate = getPlate(city);
+    const population = getPopulation(city);
+
+    const result = document.getElementById("result");
+
+    if (!plate) {
+        result.innerHTML = "Şehir bulunamadı";
+        return;
+    }
+
+    result.innerHTML = `
+        <b>${city.toUpperCase()}</b><br>
+        Plaka: ${plate}<br>
+        Nüfus: ${population}
+    `;
 }

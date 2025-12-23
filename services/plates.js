@@ -1,17 +1,23 @@
-export const plates = {
-  Adana: 1, Adıyaman: 2, Afyonkarahisar: 3, Ağrı: 4, Amasya: 5, Ankara: 6,
-  Antalya: 7, Artvin: 8, Aydın: 9, Balıkesir: 10, Bilecik: 11, Bingöl: 12,
-  Bitlis: 13, Bolu: 14, Burdur: 15, Bursa: 16, Çanakkale: 17, Çankırı: 18,
-  Çorum: 19, Denizli: 20, Diyarbakır: 21, Edirne: 22, Elazığ: 23, Erzincan: 24,
-  Erzurum: 25, Eskişehir: 26, Gaziantep: 27, Giresun: 28, Gümüşhane: 29,
-  Hakkari: 30, Hatay: 31, Isparta: 32, Mersin: 33, İstanbul: 34, İzmir: 35,
-  Kars: 36, Kastamonu: 37, Kayseri: 38, Kırklareli: 39, Kırşehir: 40,
-  Kocaeli: 41, Konya: 42, Kütahya: 43, Malatya: 44, Manisa: 45,
-  Kahramanmaraş: 46, Mardin: 47, Muğla: 48, Muş: 49, Nevşehir: 50,
-  Niğde: 51, Ordu: 52, Rize: 53, Sakarya: 54, Samsun: 55,
-  Siirt: 56, Sinop: 57, Sivas: 58, Tekirdağ: 59, Tokat: 60,
-  Trabzon: 61, Tunceli: 62, Şanlıurfa: 63, Uşak: 64, Van: 65,
-  Yozgat: 66, Zonguldak: 67, Aksaray: 68, Bayburt: 69, Karaman: 70,
-  Kırıkkale: 71, Batman: 72, Şırnak: 73, Bartın: 74, Ardahan: 75,
-  Iğdır: 76, Yalova: 77, Karabük: 78, Kilis: 79, Osmaniye: 80, Düzce: 81
-};
+function getPlate(city) {
+    const plates = {
+        adana: 1, adıyaman: 2, afyon: 3, ağrı: 4, amasya: 5,
+        ankara: 6, antalya: 7, artvin: 8, aydın: 9, balıkesir: 10,
+        bilecik: 11, bingöl: 12, bitlis: 13, bolu: 14, burdur: 15,
+        bursa: 16, çanakkale: 17, çankırı: 18, çorum: 19, denizli: 20,
+        diyarbakır: 21, edirne: 22, elazığ: 23, erzincan: 24, erzurum: 25,
+        eskişehir: 26, gaziantep: 27, giresun: 28, gümüşhane: 29, hakkari: 30,
+        hatay: 31, isparta: 32, mersin: 33, istanbul: 34, izmir: 35,
+        kars: 36, kastamonu: 37, kayseri: 38, kırklareli: 39, kırşehir: 40,
+        kocaeli: 41, konya: 42, kütahya: 43, malatya: 44, manisa: 45,
+        kahramanmaraş: 46, mardin: 47, muğla: 48, muş: 49, nevşehir: 50,
+        niğde: 51, ordu: 52, rize: 53, sakarya: 54, samsun: 55,
+        siirt: 56, sinop: 57, sivas: 58, tekirdağ: 59, tokat: 60,
+        trabzon: 61, tunceli: 62, şanlıurfa: 63, uşak: 64, van: 65,
+        yozgat: 66, zonguldak: 67, aksaray: 68, bayburt: 69,
+        karaman: 70, kırıkkale: 71, batman: 72, şırnak: 73,
+        bartın: 74, ardahan: 75, ığdır: 76, yalova: 77,
+        karabük: 78, kilis: 79, osmaniye: 80, düzce: 81
+    };
+
+    return plates[city];
+}
